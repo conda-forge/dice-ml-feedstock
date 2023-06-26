@@ -1,11 +1,11 @@
-About dice-ml
-=============
+About dice-ml-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dice-ml-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/interpretml/DiCE
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dice-ml-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generate Diverse Counterfactual Explanations for any machine learning model.
 
