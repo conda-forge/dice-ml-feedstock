@@ -1,5 +1,5 @@
 {% set name = "dice-ml" %}
-{% set version = "0.9" %}
+{% set version = "0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dice_ml-{{ version }}.tar.gz
-  sha256: 0c4c2cb57f2218ba324ef2931304ab42f5f685759688a5898b0eb85b7a25b97a
+  sha256: c0ff75cf6defcd141d3e79500586d648481d5c15b2294871c20540b0ec9117de
 
 build:
   noarch: python
@@ -16,16 +16,16 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.6
+    - pip
   run:
-    - h5py
+    - python >=3.6
     - jsonschema
     - numpy
-    - pandas
-    - python >=3.6
+    - pandas <2.0.0
     - scikit-learn
     - tqdm
+    - raiutils >=0.4.0
 
 test:
   imports:
@@ -43,6 +43,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - rxm7706
+    - rxm7706  
     - janjagusch
     - bgalvao
