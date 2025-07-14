@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: dice-ml
-  version: 0.11
+  version: "0.12"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/dice_ml-${{ version }}.tar.gz
-  sha256: 29e6bea9e4c877caa68ecdd5d981f91cc8de3b73cdad453fd7c7e000a336576d
+  sha256: 3e40771ef82ad1084ffe1dd098b801f9cd9d7cdf40efba1b85e38a615ae5a75b
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
